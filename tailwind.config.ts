@@ -7,7 +7,40 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xxs: "320px",
+      // => @media (min-width: 320px) { ... }
+
+      xsm: "450px",
+      // => @media (min-width: 450px) { ... }
+
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
+      colors: {
+        'backgroundcolor' : '#0a192f',
+        'lightestslate' : '#ccd6f6',
+        'greentint' : '#64ffda',
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        DM: ["DM Sans", "sans-serif"],
+        clash: ["Clash Display", "sans-serif"],
+        clashDisplay: ['var(--font-clashDisplay)'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
